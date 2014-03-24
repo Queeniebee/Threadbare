@@ -1,0 +1,12 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+	<!--"http://twistedmatrix.com/ns/twisted.web.template/0.1" -->
+<script src="" type="text/javascript"></script>
+<body>
+  <div t:render="header" />
+  <div id="content">
+    <p>Content goes here.</p>
+  </div>
+  <div t:render="extra_info" />
+	<span id="extra_info"></span>
+</body>
+</html>

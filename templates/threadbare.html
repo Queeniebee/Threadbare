@@ -1,0 +1,34 @@
+﻿<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="author" content="Joelle F.">
+<meta name="description" content="Still a prototype">
+<!--link type="text/css" href="static/css/bootstrap-responsive.css" rel="stylesheet" media="screen"></link-->
+<link type="text/css" href="static/css/bootstrap.css" rel="stylesheet" media="screen"></link>
+<!--link type="text/css" href="static/css/bootstrap.min.css" rel="stylesheet" media="screen"></link-->
+<link type="text/css" href="static/css/bootstrap-responsive.min.css" rel="stylesheet" media="screen"></link>
+<script src="static/css/bootstrap-responsive.css" type="text/css" rel="stylesheet"></script>
+<script src="static/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body>
+
+	<h1 class="text-center">{{ greeting }}</h1>
+	<h3 class="text-center">{{letter}}</h3>
+	<div class="row-fluid">
+  	   <div class="span8">
+  	   <div class="span4"></div>
+	   <div class="row-fluid"></div>
+	   <div class="span12"></div>
+	</div>
+	</div>
+<!--This can be rendered from Jinja2; just a series of POSTS-->
+	<div class="container-fluid">
+	<div class="row-fluid">
+	<div class="span2"></div>
+	<div class="span10" style="margin-left: 0px">
+		{% block div %}{% endblock %}
+	</div>
+	</div>
+</body>
+</html>

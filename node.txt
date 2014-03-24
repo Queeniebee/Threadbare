@@ -1,0 +1,19 @@
+ var session = sessions.lookupOrCreate(request,{
+   lifetime:604800
+ });
+
+  response.setHeader('Set-Cookie', session.getSetCookieHeaderValue());
+
+ function( request, response, callback) {
+
+   // perform some logic on the request or response objects
+   console.log(request.url);
+
+
+   // then fire our callback, and pass the request 
+   // and response objects down the chain
+   callback(request, response, function(){
+
+   });
+
+ }

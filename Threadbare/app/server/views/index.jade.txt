@@ -1,0 +1,19 @@
+﻿extends layout
+
+block content
+	div(id='login')
+		p Hello!
+		p enter a screen name:
+		p (but it doesn't really matter)
+		div(id='screenname', class='singleLine', contenteditable='true', spellcheck='false', required='true')
+		div(id='buttonWrapper')
+			button(id='joinButton') JOIN MAIN CHAT ROOM
+			button(id='luckyButton') I'M FEELING LUCKY ;)
+
+
+	div(id='about')
+		p Inspired by the open source project, Subnodes, THREADBARE will be a wireless zine that exists within its own wireless network.
+		p I'm using this chat module from Subnodes so that ITP Campers can chat.
+
+block scripts
+	script(src='/js/index.js')
